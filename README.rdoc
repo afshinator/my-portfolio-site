@@ -1,0 +1,16 @@
+== My (Afshin's) Portfolio Site - README
+
+This is my code for afshin.herokuapp.com - my tech blog website and work portfolio.
+
+Details:
+
+* Ruby 2, Rails 4.0.2
+
+* Generate new token for app secret controlled in config/initializers/secret_token.rb
+* Configure Rails to use RSpec in place of Test::Unit rails g rspec:install
+* Added my own favicon :-)
+
+
+
+* ...
+
