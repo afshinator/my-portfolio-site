@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  # callback for the db, force downcase before saving user to db
+  before_save { self.email = email.downcase }  
+  
   # Use friendly_id on Users
   extend FriendlyId
   friendly_id :friendify, use: :slugged
@@ -27,6 +30,9 @@ class User < ActiveRecord::Base
   validates :username, length: { in: 4..10 }
   # :email
   validates_format_of :email, with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
+  
+  # afshin 
+  validates :email, presence: true, uniqueness: { case_sensitive: false }
   
   def self.paged(page_number)
     order(admin: :desc, username: :asc).page page_number
