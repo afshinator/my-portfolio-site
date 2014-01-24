@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "StaticPages" do
 
   subject { page }
-  let(:home_h1) { "Afshin Mokhtari"}
+  let(:my_name) { "Afshin Mokhtari"}
   let(:recent_posts) { "Recent Posts" }
   let(:tumblr) { "My Tumblr Feed" }
   
@@ -16,8 +16,13 @@ describe "StaticPages" do
     end
     
     it "should have my name in the title" do
-      subject.source.should have_title("Afshin Mokhtari")       
+      subject.source.should have_title(my_name)       
     end
+
+    it "should have my name as an H1" do
+      should have_selector('h1', text: my_name)     
+    end
+
     
   end
 

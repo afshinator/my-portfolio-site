@@ -1,3 +1,39 @@
 <% title("Home Page") %>
-<h1>Home Page <small>views/pages/home.html.erb</small></h1>
-<p>This is your home page. Use the menu at the top to sign in / sign up / sign out.</p>
+
+<h3>New for 2014</h3>
+
+<article>
+    <img class="f-left" src= "<%= image_path("welcome.png") %>" >
+    <p><span class="text-effects1">I play with software.</span></p>
+    <p>2013 was a <strong>very busy</strong> year for me in tech.  
+        Deepening my javascript experience with
+        the projects <a href="https://github.com/afshinator/autogeo" target="_blank">AutoGeo</a>,
+        and <a href="https://github.com/afshinator/wattage-plots" target="_blank">Wattage Plotter</a>,        
+        diving into <a href="http://www.codecademy.com/tracks/ruby" target="_blank">ruby</a> (what a lovely language), 
+        discovering and working through <a href="http://www.theodinproject.com/" target="_blank">the Odin Project</a>, 
+        finishing the <a href="http://www.thinktomi.com/classes.html" target="_blank">Enterpreneurs' Playbook course</a>, 
+ 
+        the algorithms classes, and the meetups,
+        and last but not least, putting together this very site using <a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>.
+    </p>
+    <p>2014 will be more the year of focus.  Personally and professionally.</p>
+  
+    <h4>While you're here, read one of 
+     <a href="./articles"> my articles</a>.</h4> 
+    <p>I wont be blogging so much as just posting my notes, and they'll be updated.</p>
+    <p><em>Keep tuned...</em> I have a lot planned for this site. - 1/14/2014</p>
+    <hr>
+    <div class="smaller-text">
+        <p>Jan 1, 2014 - So, I decided not to use Twitter's Bootstrap or Foundation; they're overkill for this project, and I want to flex some CSS/JS skills.</p>
+        <p>Jan 13 - Alpha Deployment.  Issues: conditional assets probs with some of my css, js; chat room has problems...</p>
+        <p>Jan 14 - Deploy day 2: Understanding and implementing what needs to be done to get assets pulling in from different sources, and precompiled in the right places.
+        <br>-- Put up article about <a href="https://afshin.herokuapp.com/articles/1">my deployment research</a>.  Clearly I have to prettify those post urls soon!
+        <br>-- Added my tweets to About page.  Need to add Contact form at some point</p>
+        <p>Jan 15 - Lets see if jquery-turbolinks gem fixes my js issues. Doesn't look like it.
+        <br>-- Loading js on a per page basis, made page-specific js load at bottom of page, everything working in dev now.
+        <br>-- In production: Accordion working on Portfolio page (yes!), but chat room now totally broken (what?!)</p>
+        <p>Jan 16 - Fixed some quirks in the styling.  Contemplating non-websockets chat.</p>
+        <p>Jan 17 - Building User system.</p>   
+        <p>Jan 18 - Integrating New Relic App Monitor</p>
+    </div>
+</article>

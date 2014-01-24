@@ -2,9 +2,17 @@
  *
  *= require_self
  */
+
+// Bootstrap3
 @import "framework_and_overrides";
 
 $file-main-bkgd-image: 'http://res.cloudinary.com/techblogpics/image/upload/v1389694162/main-site-bkgd1_umhw0n.png';
+$file-monitor: 'http://res.cloudinary.com/techblogpics/image/upload/v1389694382/monitor1_zhambb.png';
+$header-code-image: 'http://res.cloudinary.com/techblogpics/image/upload/v1389694502/my-code6_e2prd6.png';
+
+
+$header-bkdg-color: #3F1F1F;
+
 
 $base-font-size: 18px;
 $base-font-weight: 300;
@@ -23,7 +31,20 @@ $base-font-weight: 300;
 $navi-link-color: $my-yellow;
 $navi-link-over: $my-orange;
 
+/* ------------------ Icon fonts of awesomeness ----------------------------------------- */
+@font-face {
+    font-family: 'icomoon';
+    src:url(asset_path('http://drivelinemoto.com/acuafshin/icomoon.eot') );
+    src:url(asset_path('http://drivelinemoto.com/acuafshin/icomoon.eot?#iefix')) format('embedded-opentype'),
+        url(asset_path('http://drivelinemoto.com/acuafshin/icomoon.woff')) format('woff'),
+        url(asset_path('http://drivelinemoto.com/acuafshin/icomoon.ttf')) format('truetype'),
+        url(asset_path('http://drivelinemoto.com/acuafshin/icomoon.svg#icomoon')) format('svg');
+}  
 
+
+
+// 
+@import "header";
 
 body {
     border-top: 5px solid $my-yellow;
@@ -39,3 +60,4 @@ body {
         weight: $base-font-weight;
     }
 }
+

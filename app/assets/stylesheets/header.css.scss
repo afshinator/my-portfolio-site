@@ -1,0 +1,160 @@
+
+
+@mixin header-adjust($contentWidth, $h1Size, $h1Spacing) {
+  #header-contents {
+    width: $contentWidth; 
+  }
+  
+  #site-title {
+    h1 {  
+        font-size: $h1Size;  
+        letter-spacing: $h1Spacing;
+    }
+  }
+}
+
+@mixin header-animation {
+    0% {    background-position: 0 0;  }
+    100% {  background-position: 0 100%; }  
+}
+
+
+@keyframes animatedBackground {
+    @include header-animation;
+}
+
+
+/* ---------------------- Navigation */
+
+#topNavigation  {
+  background: url($file-main-bkgd-image) repeat $bkgd-grey; 
+}
+
+.navbar { height: 75px; }
+.navbar-inverse { border: none; }
+
+
+/* ---------------------- Header  --------------------------------------------------------  */
+header	{ 
+    margin: 0;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4) inset; 
+    background: none repeat scroll 0 0 $header-bkdg-color;
+  
+    
+    h1 {
+        font-family: 'Ruda', sans-serif;        // TODO: Dosis
+    }    
+    
+    &:before {                                    // my icon
+        position: absolute;
+        top: 58px;
+        right: 20px; // left: 47%;  // to center it
+        z-index:100;        
+        content: "\e60f    \e60d";
+        font-family: "icomoon";
+        font-size: 2.0em;
+        padding: .3em;
+        border-radius: 50%;
+        // background: $bkgd-grey;
+        color:$my-yellow; 
+        font-smoothing: antialiased;    
+    }    
+}
+
+
+#header-branding {
+    //border: 1px solid blue;
+    background: url($file-monitor) top left no-repeat;
+ 
+    position: relative;                            // for position: absolute of animation & text
+    width: 65%;
+    max-width: 780px;
+    height: 246px;
+    top: 38px;
+    margin: 0 auto;
+    transition: all 0.25s ease 0s;
+}
+
+.attached {
+    position: absolute;
+}
+
+#scrolling-code {
+    width: 243px;
+    height: 135px;
+    top: 10px;
+    left: 9px;
+    background-image: url($header-code-image);
+    background-position: 0px 0px;
+
+    animation: animatedBackground 100s linear infinite;    
+}
+
+#site-title {
+    //border: 1px dotted green;
+    right: 0px;
+    top: -1.5em;
+    h1 {
+        margin-top:0px;
+        margin-bottom: 25px;
+        // font-size: 4.5em;
+        color: $my-white; // $my-yellow;
+        //letter-spacing: .05em;
+        text-shadow: 2px -1px 8px #222;
+    }
+}
+
+#site-description {
+    right: 0px;
+    
+    h2 {
+        letter-spacing: .2em;
+        margin:0 0 10px 0;
+        text-align: left;
+        color: $my-blue;
+    }
+
+    p {        
+        letter-spacing: .15em;
+        line-height: 1.4em;
+        color: $my-yellow;
+        text-align: justify;
+    }
+}
+
+
+
+// $contentWidth, $h1Size, $h1Spacing) {
+@media only screen and (max-width : 560px) {
+    header { 
+        margin-top: 0px; 
+        &:before { top: 500px; }
+    }
+    @include header-adjust(90%, 2.6em, .03em);
+    #site-title { h1 { margin-bottom: 15px; } }
+    #site-description { h2 { letter-spacing: .03em; }  p { letter-spacing: .03em; } }    
+}
+
+@media only screen and (min-width : 561px) and (max-width : 767px) {
+    @include header-adjust(85%, 3.0em, .04em);
+    #site-title { h1 { margin-bottom: 15px; } }    
+    #site-description { h2 { letter-spacing: .13em; }  p { letter-spacing: .03em; } } 
+}
+
+@media only screen and (min-width : 768px) and (max-width : 830px) {
+    @include header-adjust(80%, 3.25em, .04em);
+    #site-description { h2 { letter-spacing: .15em; } }
+}
+
+@media only screen and (min-width : 831px) and (max-width : 1023px) {
+    @include header-adjust(75%, 3.5em, .05em);
+}
+
+@media only screen and (min-width: 1024px) and (max-width : 1240px) {
+    @include header-adjust(65%, 4.0em, .05em);
+}
+
+@media only screen and (min-width : 1241px)  { // 1241
+    @include header-adjust(55%, 4.5em, .05em);
+}
+
