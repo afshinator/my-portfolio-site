@@ -3,16 +3,13 @@
  *= require_self
  */
 
-// Bootstrap3
-@import "framework_and_overrides";
+@import "framework_and_overrides";      // Bootstrap3
 
 $file-main-bkgd-image: 'http://res.cloudinary.com/techblogpics/image/upload/v1389694162/main-site-bkgd1_umhw0n.png';
 $file-monitor: 'http://res.cloudinary.com/techblogpics/image/upload/v1389694382/monitor1_zhambb.png';
 $header-code-image: 'http://res.cloudinary.com/techblogpics/image/upload/v1389694502/my-code6_e2prd6.png';
 
-
 $header-bkdg-color: #3F1F1F;
-
 
 $base-font-size: 18px;
 $base-font-weight: 300;
@@ -43,8 +40,8 @@ $navi-link-over: $my-orange;
 
 
 
-// 
-@import "header";
+
+@import "header";      // css code for, placed below declarations for good reason
 
 body {
     border-top: 5px solid $my-yellow;
@@ -61,3 +58,12 @@ body {
     }
 }
 
+
+.bubble-wrap1 {
+    margin-top: 1em;
+    padding: 0 1em 1em 1em;
+  
+    background: none repeat scroll 0 0 #444444;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);   
+}
