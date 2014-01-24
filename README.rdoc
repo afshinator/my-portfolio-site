@@ -9,7 +9,7 @@ Details:
 * Generate new token for app secret controlled in config/initializers/secret_token.rb
 * Configure Rails to use RSpec in place of Test::Unit rails g rspec:install
 * Added my own favicon :-)
-
+* Writing Specs for Site layout in features/pages_spec.rb
 
 
 * ...

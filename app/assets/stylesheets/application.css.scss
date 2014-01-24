@@ -1,7 +1,41 @@
 /*
- * Overwritten by RailsBricks
  *
  *= require_self
  */
 @import "framework_and_overrides";
 
+$file-main-bkgd-image: 'http://res.cloudinary.com/techblogpics/image/upload/v1389694162/main-site-bkgd1_umhw0n.png';
+
+$base-font-size: 18px;
+$base-font-weight: 300;
+
+$bkgd-grey: #333;
+$my-dkgrey: #252525;
+$my-white: #ddd;
+$my-yellow: #ffcc00;
+$my-orange: #ff9900;
+$my-red: #cc0000;
+$my-blue: #0282a3;
+
+$base-font-size: 18px;
+$base-font-weight: 300;
+
+$navi-link-color: $my-yellow;
+$navi-link-over: $my-orange;
+
+
+
+body {
+    border-top: 5px solid $my-yellow;
+
+    background: url($file-main-bkgd-image) repeat $bkgd-grey; // $bkgd-grey;
+    
+    color: $my-white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+    font: {
+        family: 'Lato', sans-serif;
+        size: $base-font-size;
+        weight: $base-font-weight;
+    }
+}
