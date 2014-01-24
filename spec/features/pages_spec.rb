@@ -23,7 +23,9 @@ describe "StaticPages" do
       should have_selector('h1', text: my_name)     
     end
 
-    
+    it "should have a sidebar" do
+      subject.source.should have_selector('#sidebar')      
+    end
   end
 
 end
