@@ -1,11 +1,14 @@
 require 'spec_helper'
 
-describe "StaticPages" do
+describe "Pages" do
 
   subject { page }
   let(:my_name) { "Afshin Mokhtari"}
   let(:recent_posts) { "Recent Posts" }
   let(:tumblr) { "My Tumblr Feed" }
+  
+  
+
   
   
   describe "Home Page" do
@@ -25,9 +28,17 @@ describe "StaticPages" do
 
     it "should have a sidebar" do
       subject.source.should have_selector('#sidebar')      
-    end
+    end    
+
   end
 
+  describe "About Page" do
+    before { visit about_path }
+    #
+    #
+    #
+  end  
+  
 end
 
 

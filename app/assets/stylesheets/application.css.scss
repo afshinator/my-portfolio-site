@@ -42,6 +42,7 @@ $navi-link-over: $my-orange;
 
 
 @import "header";      // css code for, placed below declarations for good reason
+@import "about";
 
 body {
     border-top: 5px solid $my-yellow;
