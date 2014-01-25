@@ -8,9 +8,6 @@ describe "Pages" do
   let(:tumblr) { "My Tumblr Feed" }
   
   
-
-  
-  
   describe "Home Page" do
     before { visit root_path }
 

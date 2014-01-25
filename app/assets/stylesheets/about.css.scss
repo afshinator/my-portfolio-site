@@ -1,3 +1,26 @@
+$file-flipper-front: 'http://res.cloudinary.com/techblogpics/image/upload/v1389656725/my-pic2_sih5wr.jpg';
+$file-flipper-back: 'http://res.cloudinary.com/techblogpics/image/upload/v1389653880/pic-flip1_zwrqpp.jpg';
+    
+    
+#pages-about {
+    hr { margin-bottom: 10px; }
+}
+
+#pages-about .credits {
+    ul {
+        font-size: .85em;
+    }
+
+    li {
+        list-style-type: disc;
+        margin-left: 25px;
+        line-height: 1em;
+    
+        p { display: block; }
+    }
+}
+
+
 
 /* entire container, keeps perspective */
 .flip-container {
@@ -34,12 +57,12 @@
 /* front pane, placed above back */
 .flipper-front {
 	z-index: 2;
-    background: url('http://res.cloudinary.com/techblogpics/image/upload/v1389656725/my-pic2_sih5wr.jpg') top left no-repeat;
+    background: url($file-flipper-front) top left no-repeat;
 }
 
 /* back, initially hidden pane */
 .flipper-back {
 	transform: rotateY(180deg);
-    background: url('http://res.cloudinary.com/techblogpics/image/upload/v1389653880/pic-flip1_zwrqpp.jpg') top left no-repeat;    
+    background: url($file-flipper-back) top left no-repeat;    
 }
 

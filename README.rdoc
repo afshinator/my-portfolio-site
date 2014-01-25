@@ -10,6 +10,7 @@ Details:
 * Configure Rails to use RSpec in place of Test::Unit rails g rspec:install
 * Added my own favicon :-)
 * Writing Specs and implementing Site layout in features/pages_spec.rb
+  -- the main col has a 'bubble-wrap' div around it for my flat grey bkgd over the image tile
 * Writing Spec and implementing sidebar
 * Tag body tag with controller-action
 * Add About page
