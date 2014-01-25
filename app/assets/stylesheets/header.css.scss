@@ -27,20 +27,36 @@
 /* ---------------------- Navigation */
 
 #topNavigation  {
+      a {       
+        color: $navi-link-color;
+        font-weight: 400;                          /* heavier than normal text */
+        text-decoration: none;                     /* remove underline */
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-size:.85em;
+    
+        &:hover {
+            background: $my-dkgrey;
+            color: $navi-link-over;
+            box-shadow:0 1px 3px rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+    }
   background: url($file-main-bkgd-image) repeat $bkgd-grey; 
 }
 
-.navbar { height: 75px; }
 .navbar-inverse { border: none; }
 
+
 nav .container {
-  padding-top: .8em;
+  padding-top: .4em;
 }
+
+
 
 /* ---------------------- Header  --------------------------------------------------------  */
 header	{ 
     margin: 0;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4) inset; 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4) inset; 
     background: none repeat scroll 0 0 $header-bkdg-color;
   
     

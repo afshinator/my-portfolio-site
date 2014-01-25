@@ -35,6 +35,14 @@ describe "Pages" do
     #
     #
   end  
+
+  describe "Portfolio Page" do
+    before { visit portfolio_path }
+    #
+    #
+    #
+  end    
+  
   
 end
 

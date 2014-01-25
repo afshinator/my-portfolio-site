@@ -1,0 +1,68 @@
+$file-flipper-front: 'http://res.cloudinary.com/techblogpics/image/upload/v1389656725/my-pic2_sih5wr.jpg';
+$file-flipper-back: 'http://res.cloudinary.com/techblogpics/image/upload/v1389653880/pic-flip1_zwrqpp.jpg';
+    
+    
+#pages-about {
+    hr { margin-bottom: 10px; }
+}
+
+#pages-about .credits {
+    ul {
+        font-size: .85em;
+    }
+
+    li {
+        list-style-type: disc;
+        margin-left: 25px;
+        line-height: 1em;
+    
+        p { display: block; }
+    }
+}
+
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+    float: left;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .flipper-front, .flipper-back {
+	width: 300px;
+	height: 290px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.flipper-front, .flipper-back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.flipper-front {
+	z-index: 2;
+    background: url($file-flipper-front) top left no-repeat;
+}
+
+/* back, initially hidden pane */
+.flipper-back {
+	transform: rotateY(180deg);
+    background: url($file-flipper-back) top left no-repeat;    
+}
+
