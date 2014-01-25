@@ -39,10 +39,10 @@ $navi-link-over: $my-orange;
 }  
 
 
-
-
 @import "header";      // css code for, placed below declarations for good reason
 @import "about";
+@import "sidebar";
+
 
 body {
     border-top: 5px solid $my-yellow;
@@ -71,7 +71,12 @@ body {
 
 
 .main-content {
-
+  h1, h2, h3, h4, h5, h6 {
+    font: {
+      family: 'Lato', sans-serif;
+    }
+  }
+    
     hr { margin-bottom: 1.2em; }
 
     article {
@@ -89,7 +94,7 @@ body {
         list-style: none;
     }
     
-    p, h2, h3, h4 {
+    h2, h3, h4 {
         margin-bottom: .75em;
     }
 
@@ -119,3 +124,8 @@ body {
     }
 }
 
+
+.text-effects1 {
+   font-weight: 300;
+   font-size: 2em;
+}
