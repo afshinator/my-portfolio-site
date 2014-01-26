@@ -16,6 +16,7 @@ Details:
 * Add About page
 * Add Portfolio & Blog Pages
 * Add  role="navigation" to nav, fix nav dropdown css, adjust icons postion in header
-* 
+* Give User functions its own nav bar submenu
+
 
 

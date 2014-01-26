@@ -157,8 +157,7 @@ header	{
 // $contentWidth, $h1Size, $h1Spacing) {
 @media only screen and (max-width : 560px) {
     header { 
-        margin-top: 0px; 
-        &:before { top: 500px; }
+        &:before { right:75%; top:39px; font-size: 1.5em; }
     }
     @include header-adjust(90%, 2.6em, .03em);
     #site-title { h1 { margin-bottom: 15px; } }
@@ -166,6 +165,9 @@ header	{
 }
 
 @media only screen and (min-width : 561px) and (max-width : 767px) {
+    header { 
+        &:before { right:75%; top:39px; font-size: 1.5em; }
+    } 
     @include header-adjust(85%, 3.0em, .04em);
     #site-title { h1 { margin-bottom: 15px; } }    
     #site-description { h2 { letter-spacing: .13em; }  p { letter-spacing: .03em; } } 
