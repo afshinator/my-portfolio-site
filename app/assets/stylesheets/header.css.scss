@@ -51,6 +51,13 @@ nav .container {
   padding-top: .4em;
 }
 
+.dropdown-menu {
+    background: url($file-main-bkgd-image) repeat $bkgd-grey;
+}
+
+.divider {
+  color: #cc0000;
+}
 
 
 /* ---------------------- Header  --------------------------------------------------------  */
