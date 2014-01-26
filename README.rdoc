@@ -14,6 +14,7 @@ Details:
 * Writing Spec and implementing sidebar
 * Tag body tag with controller-action
 * Add About page
+* Add Portfolio & Blog Pages
+* Add  role="navigation" to nav
 
-* ...
 
