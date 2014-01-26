@@ -4,7 +4,7 @@ This is my code for afshin.herokuapp.com - my tech blog website and work portfol
 
 Details:
 
-* Ruby 2, Rails 4.0.2
+* Ruby 2, Rails 4.0.2, Devise, Bootstrap 3, 
 
 * Generate new token for app secret controlled in config/initializers/secret_token.rb
 * Configure Rails to use RSpec in place of Test::Unit rails g rspec:install
@@ -15,6 +15,7 @@ Details:
 * Tag body tag with controller-action
 * Add About page
 * Add Portfolio & Blog Pages
-* Add  role="navigation" to nav
+* Add  role="navigation" to nav, fix nav dropdown css, adjust icons postion in header
+* 
 
 
