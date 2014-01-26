@@ -17,6 +17,8 @@ Details:
 * Add Portfolio & Blog Pages
 * Add  role="navigation" to nav, fix nav dropdown css, adjust icons postion in header
 * Give User functions its own nav bar submenu
+* Pull in my RSS feed (application_helper.rb) to the sidebar
+* Get rid of extraneous markup in Devise views
 
 
 

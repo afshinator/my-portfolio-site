@@ -7,29 +7,34 @@
     text-transform: uppercase;    
   }
   
+  h4:first-child {
+    margin-top: 3.75em;
+  }
+
+
   h4:not(:first-child) {
     margin-top: 1em;
   }
 
-    ul {
-        margin-bottom: 2em;
-    }
+  ul {
+      margin-bottom: 2em;
+  }
 
-    li {
-        font-size: 0.9em;
-        line-height: 1em;
-        margin-top: .75em;
-        list-style: none;
-    }
-    
+  li {
+      font-size: 0.9em;
+      line-height: 1em;
+      margin-top: .75em;
+      list-style: none;
+  }
+  
 
-    a {       
-        color: $navi-link-color;
-        text-decoration: none;                     /* remove underline */
-    
-        &:hover {
-            color: $navi-link-over;
-        }
-    }
+  a {       
+      color: $navi-link-color;
+      text-decoration: none;                     /* remove underline */
+  
+      &:hover {
+          color: $navi-link-over;
+      }
+  }
   
 }

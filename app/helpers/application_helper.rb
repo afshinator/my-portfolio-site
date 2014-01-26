@@ -1,5 +1,5 @@
-require 'rss/2.0'
-require 'open-uri'
+require 'rss/2.0'      # for RSS feed
+require 'open-uri'     # for RSS feed
 
 
 module ApplicationHelper
