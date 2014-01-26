@@ -52,12 +52,16 @@ nav .container {
 }
 
 .dropdown-menu {
-    background: url($file-main-bkgd-image) repeat $bkgd-grey;
+  background: url($file-main-bkgd-image) repeat $bkgd-grey;
+  box-shadow: 1px 1px 6px 2px #050505;
+  border-radius: 5px;  
+  
+  .divider {
+     background-color: $my-red;
+  }
 }
 
-.divider {
-  color: #cc0000;
-}
+
 
 
 /* ---------------------- Header  --------------------------------------------------------  */
