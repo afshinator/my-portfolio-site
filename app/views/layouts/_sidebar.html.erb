@@ -4,3 +4,11 @@
     <li>Integration with Twitter/FB</li>
     <li>and more...</li>
 </ul>
+
+<h4>My Tumblr Feed</h4>
+<%= blog_feed %>
+
+<% if %w(about).include?(controller.action_name) %>
+    <h4> </h4>
+    <%= render "shared/twitter" %>
+<% end %>
