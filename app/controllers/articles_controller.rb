@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
     
     
     def show
-        @articles = Article.find(params[:id])
+        @articles = Article.friendly.find(params[:id])
         @comment = Comment.new
         @comment.article_id = @articles.id
         
@@ -38,7 +38,7 @@ class ArticlesController < ApplicationController
     def destroy
         @all_articles = Article.order(created_at: :desc)
         
-        @article = Article.find(params[:id])
+        @article = Article.friendly.find(params[:id])
         @article.destroy
         flash.notice = "Article '#{@article.title}' Deleted!"        
         redirect_to articles_path
@@ -46,7 +46,7 @@ class ArticlesController < ApplicationController
     
     
     def edit
-        @article = Article.find(params[:id])
+        @article = Article.friendly.find(params[:id])
         
         @all_articles = Article.order(created_at: :desc)
     end
@@ -55,7 +55,7 @@ class ArticlesController < ApplicationController
     def update
         @all_articles = Article.order(updated_at: :desc)
         
-        @article = Article.find(params[:id])
+        @article = Article.friendly.find(params[:id])
         @article.update(article_params)
                 
         flash.notice = "Article '#{@article.title}' Updated!"

@@ -20,6 +20,8 @@ Details:
 * Pull in my RSS feed (application_helper.rb) to the sidebar
 * Get rid of extraneous markup in Devise views
 * Add Articles and Comments.
+* Add pretty urls to articles
+
 
 
 

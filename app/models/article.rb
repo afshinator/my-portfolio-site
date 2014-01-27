@@ -1,4 +1,8 @@
 class Article < ActiveRecord::Base
+    extend FriendlyId
+    friendly_id :title, :use => :slugged
+    validates_presence_of :title, :slug, :body  
+  
     has_many :comments
     has_many :taggings
     has_many :tags, through: :taggings
