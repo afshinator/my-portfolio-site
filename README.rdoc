@@ -21,6 +21,7 @@ Details:
 * Get rid of extraneous markup in Devise views
 * Add Articles and Comments.
 * Add pretty urls to articles
+* Fix the title tag to show article titles
 
 
 

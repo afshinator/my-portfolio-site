@@ -6,7 +6,7 @@ module ApplicationHelper
   
   def title(value)
     unless value.nil?
-      @title = "#{value} | MyPortfolioSite"      
+      @title = "#{value}"      
     end
   end
   
