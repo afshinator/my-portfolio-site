@@ -24,7 +24,7 @@ describe "Pages" do
     end
 
     it "should have a sidebar" do
-      subject.source.should have_selector('#sidebar')      
+      subject.source.should have_selector('#sidebar1')      
     end    
 
   end

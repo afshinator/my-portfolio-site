@@ -1,0 +1,21 @@
+<% provide(:title, 'All Articles') %>
+<h1>Afshin's Tech Articles</h1>
+
+<div class="bubble-boxwrap2 icon-compsci">
+    <p>Looks like I have something to say...</p>
+    
+    <% @articles.each do |article| %>
+
+    <p>
+        <span class="small-inline">( <%= article.created_at.to_formatted_s(:long)[/.*(?=\s)/] %> )</span>        
+        <%= link_to article.title, article_path(article),
+        class: 'article_title', id: "article_#{article.id}" %>
+    </p>
+
+    <% end %>
+</div>
+
+
+<% if false %>
+    <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+<% end %>
