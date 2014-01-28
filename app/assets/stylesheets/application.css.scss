@@ -39,11 +39,6 @@ $navi-link-over: $my-orange;
 }  
 
 
-@import "header";      // css code for, placed below declarations for good reason
-@import "about";
-@import "sidebar";
-
-
 body {
     border-top: 5px solid $my-yellow;
 
@@ -70,18 +65,21 @@ body {
 }
 
 
+.page-header  {
+    font-size:2.75em;
+    font-weight: 400;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+
 .main-content {
   h1, h2, h3, h4, h5, h6 {
     font: {
       family: 'Lato', sans-serif;
     }
   }
-    
-  h1:first-child {
-    font-size:2.75em;
-    font-weight: 300;
-  }
-
 
     hr { margin-bottom: 1.2em; }
 
@@ -138,3 +136,8 @@ body {
    font-weight: 300;
    font-size: 2em;
 }
+
+@import "header";      // css code for, placed below declarations for good reason
+@import "about";
+@import "sidebar";
+@import "portfolio";

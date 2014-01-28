@@ -1,0 +1,153 @@
+
+$bubble-icon-colors: #5F5F61;
+
+.align-right { float: right; }
+.align-left { float: left; }
+
+@mixin attach-before-icon($icon) {
+    &:before {                                    // my icon
+        position: absolute;
+        top: 15px;
+        right: 5px; // left: 47%;  // to center it
+        z-index:100;        
+        content: $icon;
+        font-family: "icomoon";
+        font-size: 3em;
+        padding: .3em;
+        border-radius: 50%;
+        // background: #ffcc00;;
+        color:$bubble-icon-colors; // $my-yellow; 
+        font-smoothing: antialiased;
+        speak: none;        
+    }
+}
+
+.icon-compsci {
+    @include attach-before-icon("\e60f");
+}
+
+
+.icon-ruby-ecmascript {
+    @include attach-before-icon("\e610    \e611");
+}
+
+.icon-ecmascript {
+    @include attach-before-icon("\e610");
+}
+
+.icon-ruby {
+    @include attach-before-icon("\e611");
+}
+
+.icon-wordpress {
+    @include attach-before-icon("\e607");
+}
+
+.icon-rails {
+    @include attach-before-icon("\e60c");
+    &:before {                                    // my icon
+        color: $my-white;      
+    }    
+}
+
+.ptitle {
+ font-size: 1.3em; 
+}
+
+
+.bubble-boxwrap1 {
+    position: relative;
+    margin-top: 2.0em;
+    margin-bottom: 2.5em;
+    padding: 7px;
+    border-radius: 10px;   
+    border: 1px solid #888;
+    overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4) inset;  
+    
+    p, strong, em, ul, li, a {
+        font-family: 'Lato', sans-serif;
+    }    
+    
+    h1,h2,h3,h4 { 
+        font-family: 'Ruda', verdana, arial;
+    }
+
+    h6 { 
+        font-family: 'icomoon'; 
+    }
+
+    h1 {        
+        font-size: 1.8em;
+        letter-spacing: 0.4em;
+        margin: .3em 0;
+        color: $my-orange;
+    }
+    
+    h2 {
+        font-size: 1.0em;
+    }
+
+    h3 { color: $my-blue; }
+
+    ul { margin-top: 1em; }
+    li {
+        list-style-type: circle;
+        margin-left: 2em;
+        margin-top: 1.75px;
+    }
+    p { margin-top: .5em; }
+}
+
+.panel {
+   background: #333; 
+  border-color: #777;
+}
+
+.panel-heading {
+   background: #555 !important; 
+}
+
+.panel-body {
+  border-top-color: #333 !important;
+}
+
+
+/*
+// ----------------------- Accordion
+#accordion {
+    width:90%;
+    margin:1em auto;
+    background-color: #444;
+    border-radius: 10px;   
+    // border: 1px solid #888;
+    
+    & h2.accordion-header {
+        cursor:pointer;
+        background-color: $bkgd-grey;
+        padding:10px 15px;
+        margin:0 0;
+        color: $my-white;
+        text-align: center;
+        border-bottom: 1px solid #444;
+        border-top: 1px solid $my-dkgrey;
+        border-radius: 10px;   
+    }
+
+    
+    & h2.active {
+        background-color:$bkgd-grey;
+        color:$my-yellow;
+    }
+
+    div {
+        height:320px;
+        padding:20px;
+        border: 1px solid #555;
+        border-radius: 10px;  
+    }
+}
+
+
+*/
+

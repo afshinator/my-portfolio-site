@@ -22,6 +22,8 @@ Details:
 * Add Articles and Comments.
 * Add pretty urls to articles
 * Fix the title tag to show article titles
+* Add Portfolio page
+
 
 
 
