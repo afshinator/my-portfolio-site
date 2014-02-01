@@ -23,6 +23,7 @@ Details:
 * Add pretty urls to articles
 * Fix the title tag to show article titles
 * Add Portfolio page
+* Add recent posts to sidebar
 
 
 
