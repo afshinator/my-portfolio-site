@@ -1,16 +1,35 @@
+<% if %w(pages articles).include?(controller.controller_name) %>
+    <% unless %w(chat about).include?(controller.action_name) %>
+        <h4>Recent Posts</h4>
+        <ul class="posts">
+        
+        <% @all_articles.each do |article| %>
+            <li>
+              <%# TODO: use the class, probably take out id %>
+              <%= link_to article.title, article_path(article),
+                  class: 'article_title', id: "article_#{article.id}" %>
+            </li>
+        <% end %>
+        </ul>
+
+        <h4>My Tumblr Feed</h4>
+        <%= blog_feed %>
+
+    <% end %>
+<% end %>
+
+
+
+<% if %w(about).include?(controller.action_name) %>
+    <div class="tweets">
+        <%= render "shared/twitter" %>
+    </div>
+<% end %>
+
+
 <h4>Coming Soon to the site</h4>
 <ul>
     <li>User Accounts</li>
     <li>Integration with Twitter/FB</li>
     <li>and more...</li>
 </ul>
-
-<h4>My Tumblr Feed</h4>
-<%= blog_feed %>
-
-
-<% if %w(about).include?(controller.action_name) %>
-    <h4> </h4>
-    <%= render "shared/twitter" %>
-<% end %>
-
