@@ -139,6 +139,46 @@ body {
 
 
 
+// The back to top button, on every page.
+.back-to-top {
+    position: fixed;
+    min-width: 3em;
+    bottom: 7em;
+    right: 0px;
+    text-decoration: none;
+    color: $my-dkgrey;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+    z-index: 10000;
+    border-radius: 10% 0 0 10%;
+    // box-shadow: 2px 2px 5px 3px #4F4F4F;
+    
+    &:before {                                    // my icon
+        position: absolute;
+        top: 11px;
+        right: 5px; // left: 47%;  // to center it
+        z-index:100;        
+        content: "\e600";
+        font-family: "icomoon";
+        font-size: 1.5em;
+        //padding: .3em;
+        border-radius: 50%;
+        // background: #ffcc00;;
+        color:$my-yellow; 
+        font-smoothing: antialiased;
+        speak: none;        
+    }
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
+
+
+
+
 
 @import "header";      // css code for, placed below declarations for good reason
 @import "about";
