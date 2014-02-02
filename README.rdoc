@@ -24,6 +24,8 @@ Details:
 * Fix the title tag to show article titles
 * Add Portfolio page
 * Add recent posts to sidebar
+* Size twitter widget on About page so it doesn't break layout
+
 
 
 
