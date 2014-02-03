@@ -1,0 +1,34 @@
+#footer{
+  background-color: rgba(0,0,0,0.64);         // match the twitter panel
+  height: 100px;                              // todo
+  margin-top: -100px;  
+  
+  .footer-first-row{
+    padding-top: 20px;
+  }
+}
+
+
+.social-links {
+    text-align: right;
+    padding: .5em .25em; 
+    color: $my-yellow;
+    font-size: 1.5em;
+    a { 
+        color: $my-yellow;
+        transition: all 0.25s ease 0s;
+        text-decoration: none;
+        
+        &:hover {
+            color: $navi-link-over;
+        }
+    }
+    span { 
+        margin: .25em; 
+    }
+}
+
+.site-credits {
+    font-size: .5em;
+    text-transform: uppercase;
+}

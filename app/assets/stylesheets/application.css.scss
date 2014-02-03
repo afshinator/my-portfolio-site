@@ -4,6 +4,7 @@
  */
 
 @import "framework_and_overrides";      // Bootstrap3
+                                        // rest of the @imports at the end of file
 
 $file-main-bkgd-image: 'http://res.cloudinary.com/techblogpics/image/upload/v1389694162/main-site-bkgd1_umhw0n.png';
 $file-monitor: 'http://res.cloudinary.com/techblogpics/image/upload/v1389694382/monitor1_zhambb.png';
@@ -154,24 +155,7 @@ body {
     display: none;
     z-index: 10000;
     border-radius: 10% 0 0 10%;
-    // box-shadow: 2px 2px 5px 3px #4F4F4F;
-/*    
-    &:before {                                    // my icon
-        position: absolute;
-        top: 11px;
-        right: 5px; // left: 47%;  // to center it
-        z-index:100;        
-        content: "\e600";
-        font-family: "icomoon";
-        font-size: 1.5em;
-        //padding: .3em;
-        border-radius: 50%;
-        // background: #ffcc00;;
-        color:$my-yellow; 
-        font-smoothing: antialiased;
-        speak: none;        
-    }
-*/   
+    // box-shadow: 2px 2px 5px 3px #4F4F4F; 
 }
 
 .back-to-top:hover {    
@@ -180,9 +164,10 @@ body {
 
 
 
-
+@import "ico-classes";
 
 @import "header";      // css code for, placed below declarations for good reason
 @import "about";
 @import "sidebar";
 @import "portfolio";
+@import "footer";

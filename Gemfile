@@ -6,7 +6,7 @@ gem 'sass-rails', '4.0.1'
 gem 'uglifier', '2.4.0'
 gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.0.4'
-gem 'jquery-turbolinks'         # fix issue where turbolinks prevents $(document).ready(); working properly
+gem 'jquery-turbolinks'         # fix issue where turbolinks prevents $(document).ready() from working properly
 gem 'turbolinks', '2.1.0'
 gem 'jbuilder', '1.5.3'
 gem 'bcrypt-ruby', '3.1.2'
