@@ -19,3 +19,4 @@
 
 
 // Note the addition of jquery.turbolinks
+

@@ -1,11 +1,10 @@
 == My (Afshin's) Portfolio Site - README
 
-This is my code for afshin.herokuapp.com - my tech blog website and work portfolio.
+My Ruby on Rails project for afshin.herokuapp.com - my tech blog website and work portfolio.
 
 Details:
 
 * Ruby 2, Rails 4.0.2, Devise, Bootstrap 3, 
-
 * Generate new token for app secret controlled in config/initializers/secret_token.rb
 * Configure Rails to use RSpec in place of Test::Unit rails g rspec:install
 * Added my own favicon :-)
@@ -25,6 +24,8 @@ Details:
 * Add Portfolio page
 * Add recent posts to sidebar
 * Size twitter widget on About page so it doesn't break layout
+* Add Google Analytics
+
 
 
 
