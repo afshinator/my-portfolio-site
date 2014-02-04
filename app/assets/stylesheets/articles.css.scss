@@ -1,0 +1,55 @@
+.small-inline { 
+    display: inline-block;
+    width: 140px;
+    font-size: 0.7em;
+    font-family: 'Ruda';
+}
+
+.article-title {
+   color: #0282a3;
+  font-size:3em;
+  line-height: 1.2em;   
+}
+
+
+.article-summary {
+    margin:2em 0 1.5em -50px;
+    text-transform: lowercase;
+    font-size: 1.5em;
+    // background: linear-gradient(to bottom, #7E6D42 0%, #5C4E35 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 rgba(0, 0, 0, 0.3) inset;
+    //  margin: 30px 0 30px -30px;
+    padding: 20px 20px 24px 50px;
+    position: relative;
+    z-index: 99;
+  
+        &:before {                                  
+            position: absolute;
+            top:-1em;
+            right: 0%; 
+            z-index:199;       
+            content: url('http://res.cloudinary.com/techblogpics/image/upload/v1390290743/tl_dr_qchyjd.png');      // compsci icon
+            speak: none; 
+            transform: rotate(15deg);
+        }
+}
+
+// for the list of tags, when showing an article; attached to a <ul>
+.tag-listing {
+    font-size: 85%;
+    display: inline-block;
+    list-style:none; 
+
+    padding-left: 0;
+   
+    li { 
+        display:inline; 
+        text-transform:uppercase; 
+        margin: 0 1.2em 0 4px;
+
+        a { 
+            text-decoration:none; 
+        }
+    }
+}

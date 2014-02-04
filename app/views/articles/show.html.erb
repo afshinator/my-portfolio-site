@@ -9,11 +9,13 @@
     <div class="article-summary">
         <p><%= @articles.blurb  %></p>
     </div>
+   
     <%= image_tag(@articles.image_url, class: "article-img") %>
+   
     <p><%= @articles.body.html_safe  %></p>  
+   
     <p>
-        <ul class="tag-listing">
-            tags:
+        <ul class="tag-listing">Tags:            
             <% @articles.tags.each do |tag| %>
                 <li><%= link_to tag.name, tag_path(tag) %></li>
             <% end %>
