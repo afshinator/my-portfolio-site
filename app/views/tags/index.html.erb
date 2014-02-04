@@ -1,0 +1,14 @@
+<h1>All Article Tags</h1>
+
+<p>Tags help categorize articles.</p>
+
+<div class="bubble-boxwrap1">
+   <ul>
+      <% @tags.each do |t| %>
+         <li><%= t.name %></li>
+      <% end %>
+   </ul>
+</div>
+
+<hr>
+<p><%= link_to "<< Back to Articles List", articles_path %></p>

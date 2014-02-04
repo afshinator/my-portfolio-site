@@ -24,7 +24,9 @@ Details:
 * Add Portfolio page
 * Add recent posts to sidebar
 * Size twitter widget on About page so it doesn't break layout
-* Add Google Analytics
+* Add Analytics
+* Spice up article styles
+* Add category list and copyright to footer
 
 
 
