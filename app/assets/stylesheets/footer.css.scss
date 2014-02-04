@@ -9,6 +9,33 @@
 }
 
 
+.footer-categories {
+    ul {
+        list-style:none;
+        float: left;
+        padding-left:0;
+    }
+    
+    li {
+        display: inline-block; 
+        margin-right: 0.5em;
+    }    
+
+    a {
+        font-size: .75em;
+        font-weight: 400;
+        color: $navi-link-color;   
+        text-decoration: none;
+        transition: all 0.25s ease 0s;  
+        
+        &:hover {
+            color: $navi-link-over;
+        }
+    }
+}
+
+
+
 .social-links {
     text-align: right;
     padding: .5em .25em; 
