@@ -27,6 +27,8 @@ Details:
 * Add Analytics
 * Spice up article styles
 * Add category list and copyright to footer
+* Add Brakeman in dev for detecting security vulnerabilities.
+
 
 
 
