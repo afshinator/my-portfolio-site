@@ -35,6 +35,8 @@ Details:
 -- added /vendor to .gitignore
 -- did a 'git rm -r --cached vendor ' to remove vendor dir from git
 * Deploy over old code base
+-- precompiling assets gives: 'rake aborted unexpected token ...'
+-- took <script> tags out of segmentio.js, as per http://stackoverflow.com/questions/8854057/bundle-exec-rake-assetsprecompile-fails-with-unexpected-token
 * Limit access to edit/new/delete actions to only admin for Articles
 
 

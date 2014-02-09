@@ -1,7 +1,7 @@
 // --------------- Segements.io analytics code
 // Turbolinks fix at end of file...
 //
-<script type="text/javascript">
+
 // Create a queue, but don't obliterate an existing one!
 window.analytics || (window.analytics = []);
 
@@ -64,4 +64,3 @@ $(document).on('ready page:change', function() {
   analytics.trackForm($('#new_user'), 'Signed Up');   // add tracking to form like this
   // analytics.trackForm($('#new_contact'), 'Contact Request');
 });
-</script>
