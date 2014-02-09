@@ -80,6 +80,8 @@ GEM
       rails (>= 3, < 5)
     font-awesome-sass (4.0.2)
       sass-rails (>= 3.1.1)
+    font_assets (0.1.10)
+      rack
     friendly_id (5.0.2)
       activerecord (~> 4.0.0)
     haml (4.0.5)
@@ -217,6 +219,7 @@ DEPENDENCIES
   factory_girl_rails
   figaro (= 0.7.0)
   font-awesome-sass (= 4.0.2)
+  font_assets
   friendly_id (= 5.0.2)
   jbuilder (= 1.5.3)
   jquery-rails (= 3.0.4)
