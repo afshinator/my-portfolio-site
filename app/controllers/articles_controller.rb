@@ -2,6 +2,11 @@ require 'rss'
 
 class ArticlesController < ApplicationController
     include ArticlesHelper
+
+    before_filter :require_admin!, only: [
+      :new, :create, :destroy, :edit, :update
+    ]
+  
   
     def index
         @articles = Article.order(created_at: :desc)

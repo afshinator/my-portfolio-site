@@ -37,8 +37,10 @@ Details:
 * Deploy over old code base
 -- precompiling assets gives: 'rake aborted unexpected token ...'
 -- took <script> tags out of segmentio.js, as per http://stackoverflow.com/questions/8854057/bundle-exec-rake-assetsprecompile-fails-with-unexpected-token
+-- had to git push heroku master --force
 * Limit access to edit/new/delete actions to only admin for Articles
 
+* Put some filler in /inside page for newly logged in users 
 
 
 
