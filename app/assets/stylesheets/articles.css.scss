@@ -53,3 +53,20 @@
         }
     }
 }
+
+
+.article-image {
+  display: inline-block;
+  
+  margin: 10px;
+  padding: 5px;
+  
+  // border: 10px solid #777;
+  box-shadow: 0 0 5px #888;
+  
+  img, span { display: block; }
+  span, figcaption {
+    text-align: center;
+    margin-top: 8px;
+  }
+}
