@@ -29,7 +29,14 @@ Details:
 * Add category list and copyright to footer
 * Add Brakeman in dev for detecting security vulnerabilities.
 * Add Letsrate gem for rating posts / cancel that, forget about this gem for now.
-* Let only admin have access to new/edit/delete actions of articles
+* Clean up /vendor dir issue, its filled with all sorts of stuff I shouldnt check in.
+-- see http://stackoverflow.com/questions/20703334/git-ingoring-vendor-folder
+-- and http://stackoverflow.com/questions/12573596/what-is-the-purpose-of-vendor-bundle-heroku-tells-me-to-remove-it
+-- added /vendor to .gitignore
+-- did a 'git rm -r --cached vendor ' to remove vendor dir from git
+* Deploy over old code base
+* Limit access to edit/new/delete actions to only admin for Articles
+
 
 
 
