@@ -1,4 +1,5 @@
 MyPortfolioSite::Application.routes.draw do
+  post '/rate' => 'rater#create', :as => 'rate'
   root "pages#home"    
   get "home", to: "pages#home", as: "home"
   get "about", to: "pages#about", as: "about"

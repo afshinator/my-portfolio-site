@@ -28,6 +28,8 @@ Details:
 * Spice up article styles
 * Add category list and copyright to footer
 * Add Brakeman in dev for detecting security vulnerabilities.
+* Add Letsrate gem for rating posts / cancel that, forget about this gem for now.
+* Let only admin have access to new/edit/delete actions of articles
 
 
 

@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   # callback for the db, force downcase before saving user to db
   before_save { self.email = email.downcase }  
-  
+     
   # Use friendly_id on Users
   extend FriendlyId
   friendly_id :friendify, use: :slugged

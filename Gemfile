@@ -44,3 +44,4 @@ gem 'font-awesome-sass', '4.0.2'
 gem 'devise', '3.2.2'           # User Authentication
 gem 'bootstrap-sass', '3.0.3.0'
 gem 'autoprefixer-rails'        # for CSS3 vendor prefixes
+# gem 'letsrate'                  #  add rating capabilites 

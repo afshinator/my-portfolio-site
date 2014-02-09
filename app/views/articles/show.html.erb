@@ -3,6 +3,10 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sons-of-obsidian"></script>
 <% end %>
 
+<% content_for :javascript_includes do %>
+  <%= javascript_include_tag 'jquery.raty.js','letsrate.js'%>
+<% end %> 
+
 <article>
     <h1 class="article-title"><%= @articles.title %></h1>
 
@@ -11,7 +15,7 @@
     </div>
    
     <%= image_tag(@articles.image_url, class: "article-img") %>
-   
+
     <p><%= @articles.body.html_safe  %></p>  
    
     <p>
