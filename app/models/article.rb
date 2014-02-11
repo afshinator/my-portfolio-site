@@ -10,7 +10,12 @@ class Article < ActiveRecord::Base
    validates :title, presence: true, length: { maximum: 50 } # todo, 50 is too much ?
    validates :body, presence: true
    validates :blurb, presence: true
-   # validates :image_url, :format => URI::regexp(%w(http https))    
+   # validates :image_url, :format => URI::regexp(%w(http https))   
+#validates :image_url, :format => {
+#:with => %r{\.(gif|jpg|png)$}i,
+#:message => 'must be a URL for GIF, JPG or PNG image.'  
+  
+  
    
    def tag_list
       tags.join(", ")

@@ -42,7 +42,7 @@ Details:
 * Fix bug with prettyprint  (add include js to bottom of index template)
 * Put some filler in /inside page for newly logged in users 
 * Serve icon-fonts locallycurl -I https://some.cdn.otherdomain.net/media/fonts/somefont.ttf
-
+* Fix validation of image_url so that it can be empty or else a valid image url.
 
 
 
