@@ -45,7 +45,10 @@ Details:
 
 * FIREFOX issues:  icon fonts & focus marker
 -- Focus marker problem is easy to fix.
+
 * Fix 'Personal Blog' contents in profile page
+* Get Rid of Apps menu since it's taking me so long to get to it.
+* Update About page contents
 
 * Fix validation of image_url so that it can be empty or else a valid image url.
 
