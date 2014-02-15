@@ -34,7 +34,9 @@
         text-transform: uppercase;
         border-radius: 5px;
         font-size:.85em;
-    
+        &:focus{
+          outline:0;                               /*removes the dotted border around links in firefox*/
+        }
         &:hover {
             background: $my-dkgrey;
             color: $navi-link-over;

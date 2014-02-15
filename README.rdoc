@@ -41,7 +41,11 @@ Details:
 * Limit access to edit/new/delete actions to only admin for Articles
 * Fix bug with prettyprint  (add include js to bottom of index template)
 * Put some filler in /inside page for newly logged in users 
-* Serve icon-fonts locallycurl -I https://some.cdn.otherdomain.net/media/fonts/somefont.ttf
+* Serve icon-fonts locally curl -I https://some.cdn.otherdomain.net/media/fonts/somefont.ttf
+
+* Firefox issues:  icon fonts & focus marker
+-- Focus marker problem is easy to fix.
+
 * Fix validation of image_url so that it can be empty or else a valid image url.
 
 
