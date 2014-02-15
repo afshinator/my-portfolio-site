@@ -43,8 +43,9 @@ Details:
 * Put some filler in /inside page for newly logged in users 
 * Serve icon-fonts locally curl -I https://some.cdn.otherdomain.net/media/fonts/somefont.ttf
 
-* Firefox issues:  icon fonts & focus marker
+* FIREFOX issues:  icon fonts & focus marker
 -- Focus marker problem is easy to fix.
+* Fix 'Personal Blog' contents in profile page
 
 * Fix validation of image_url so that it can be empty or else a valid image url.
 
