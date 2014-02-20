@@ -48,7 +48,9 @@ Details:
 
 * Fix 'Personal Blog' contents in profile page
 * Get Rid of Apps menu since it's taking me so long to get to it.
-* Update About page contents
+* Update About & Home page contents
+
+* Looks like sidebar articles listing needs sorting
 
 * Fix validation of image_url so that it can be empty or else a valid image url.
 
