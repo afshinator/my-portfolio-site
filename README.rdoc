@@ -1,6 +1,6 @@
 == My (Afshin's) Portfolio Site - README
 
-My Ruby on Rails project for afshin.herokuapp.com - my tech blog website and work portfolio.
+Ruby on Rails project for http://afshin.herokuapp.com - my tech blog website and work portfolio.
 
 Details:
 

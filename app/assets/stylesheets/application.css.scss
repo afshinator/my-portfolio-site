@@ -157,7 +157,7 @@ body {
 }
 
 .alert-danger {
-   background: linear-gradient(to bottom, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* W3C */ 
+   background: linear-gradient(to bottom, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); 
 }
 
 
@@ -182,7 +182,6 @@ body {
 .back-to-top:hover {    
     background-color: rgba(135, 135, 135, 0.50);
 }
-
 
 
 @import "ico-classes";
