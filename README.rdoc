@@ -42,19 +42,23 @@ Details:
 * Fix bug with prettyprint  (add include js to bottom of index template)
 * Put some filler in /inside page for newly logged in users 
 * Serve icon-fonts locally curl -I https://some.cdn.otherdomain.net/media/fonts/somefont.ttf
-* Use https://github.com/ddollar/heroku-push to send to heroku directly w/o involving git
-
 * FIREFOX issues:  icon fonts & focus marker
 -- Focus marker problem is easy to fix.
 
 * Fix 'Personal Blog' contents in profile page
 * Get Rid of Apps menu since it's taking me so long to get to it.
 * Update About & Home page contents
+* Use https://github.com/ddollar/heroku-push to send to heroku directly w/o involving git
+-- trying to seed db afterwards crashed the app, had to add a new dyno manually
+* About page sidebar, the tweets widget is too high up
+* Updating content creation date by first 'heroku pg:psql' and then update with 'update articles set created_at=date_trunc('hour', timestamp '2014-02-01 4:09:40') where id=3                             
+;'
 
 * Looks like sidebar articles listing needs sorting
 
 * Fix validation of image_url so that it can be empty or else a valid image url.
 
+* /admin/users page needs styling
 
 
 
