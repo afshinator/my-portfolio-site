@@ -42,6 +42,7 @@ Details:
 * Fix bug with prettyprint  (add include js to bottom of index template)
 * Put some filler in /inside page for newly logged in users 
 * Serve icon-fonts locally curl -I https://some.cdn.otherdomain.net/media/fonts/somefont.ttf
+* Use https://github.com/ddollar/heroku-push to send to heroku directly w/o involving git
 
 * FIREFOX issues:  icon fonts & focus marker
 -- Focus marker problem is easy to fix.
