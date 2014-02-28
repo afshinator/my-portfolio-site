@@ -54,7 +54,7 @@ Details:
 * Updating content creation date by first 'heroku pg:psql' and then update with 'update articles set created_at=date_trunc('hour', timestamp '2014-02-01 4:09:40') where id=3                             
 ;'
 
-* Looks like sidebar articles listing needs sorting
+* Looks like sidebar articles listing needs sorting; reverse by data created_at
 
 * Fix validation of image_url so that it can be empty or else a valid image url.
 
